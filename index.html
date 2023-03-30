@@ -3,113 +3,445 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="loginstyle.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- <link rel="stylesheet" href="nav.css">  -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>HOME</title>  
     <script src="https://kit.fontawesome.com/87d2dcb626.js" crossorigin="anonymous"></script>
-
-    <title>login</title>  
-    <style>
-      /* input[type="password"]::after {
-  content: "";
-  position: relative;
-  background-image: url("https://cdn-icons-png.flaticon.com/512/159/159604.png");
-  background-size: contain; 
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-  right: 5px;
-}
-
-input[type="password"]:hover::after {
-  background-image: url("hide-password-icon.png");
-}
-
-input[type="password"]:active::after {
-  background-image: url("hide-password-icon.png");
-} */ 
-div .group2 {
-    display: block;
-    height: 10px;
-    text-align: left;
-    padding-left: 70px;
-    padding-top: 10px;
-    font: 22px sans-serif;
-    position: relative;
-   top: 0;
-   left: 0;
-}
-
-div .group2 > i {
-  position: absolute;
-  right: 5px;
-  bottom: 500%;
-  font-size: 15px;
-  font-weight: lighter; 
-  color: white;
-  cursor: pointer
-}
-      </style>
+    <style> 
+ 
+    body{
     
-</head>
-
-    <body>
+        margin: 0;
+        font-family: 'Open Sans', sans-serif; 
+        color: white;
+        background-color: #ECE58A;
+        width: 100%;
         
-        <div class="content">
-            <h1><span style="color:white">humanity in it's true sense Donate</span>
-                 <span style="color:#d60034;background-color: white;"> blood&#129656</span> save life</h1>       
-        </div>
-
-        <div class="form">
-          <form class="login-form" action="homepage.html" method="">
-            <input class="user-input" type="text" name="" placeholder="Username" required id="username">
-            <!-- <input class="user-input" type="password" name="" placeholder="Password" required id="password" style="position: relative; display: block;"> --> 
-            <div class="tow">
-              <input class="active user-input" type="password" id="pass2" id="password" placeholder="Password">
-              <div class="group2">
-               <i id="icon" class="fa fa-eye-slash"></i>
-              </div> 
-            </div>
-            <div class="options-01">
-              <label class="remember-me"><input type="checkbox" name="">Remember me</label>
-              <a href="#">Forgot your password?</a>
-            </div>
-            <a href="homepage.html">
-
-              <input class="btn" type="button" name="" value="LOGIN">
-            </a>
-            <!-- <a href="homepage.html" class="btn">LOGIN</a> -->
-            <div class="options-02">
-              <p>Not Registered? <a href="registration.html">Create an Account</a></p>
-            </div>  
-          </form>
-          <script>
-            var inputPass2 = document.getElementById('pass2'),
-    icon = document.getElementById('icon');
-
-   icon.onclick = function () {
-
-    //  if(inputPass2.className == 'user-input') {
-    //     inputPass2.setAttribute('type', 'text');
-    //     icon.className = 'fa fa-eye';
-    //    inputPass2.className = '';
-
-    //  } else {
-    //     inputPass2.setAttribute('type', 'password');
-    //     icon.className = 'fa fa-eye-slash';
-    //    inputPass2.className = 'user-input'; 
-    // } 
-    if(inputPass2.getAttribute('type')==='password')
-    {
-      icon.className = 'fa fa-eye';
-      inputPass2.setAttribute('type','text');
-    } 
-    else{
-      icon.className = 'fa fa-eye-slash';
-      inputPass2.setAttribute('type','password');
+        
+        
     }
+    .container{
+    background: url('wave.svg'); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #ECE58A;
+    background-position:0% 0%;
+    max-width: 100%;
+    height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    gap: 10em; 
+    justify-content: space-between; 
+    align-items: center;
+    }
+   
+    
+    
+    
+    
 
+
+
+ 
+
+
+
+    
+     
+     .bannertext{
+        width: 80%;
+        height: auto; 
+        margin: 0 auto;
+        /* border: solid black; */
+        position: absolute;
+        top: auto;
+        bottom: 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: yellow;
+     } 
+     .bannertext h1{
+        margin: 0;
+        font-size: 2.5em;
+        font-weight:200;
+        text-align: center;
+       
+        
+     }
+     .bannertext h3{
+        font-weight: 200;
+     }
+    .searchhere{
+        width: 80%;
+        height: 20%;
+        position: absolute; 
+        top: auto;
+        bottom: 25%; 
+       
+        display: flex;
+        align-items: center;  
+        justify-content: center;
+        gap: 10px; 
+        /* background-color: whitesmoke;  */
+        
+       
+    }
+    .searchhere input{
+        width: 50%;
+        height: 45%; 
+        font-size: 1.5rem; 
+        border:2px solid rgb(244, 99, 99); 
+        box-shadow: 0px 0px 10px rgb(247, 248, 247); 
+        
+    }
+    .searchhere  button{
+        height:45%;
+        width:50%;
+        border-radius: 10px; 
+        font-size: 1.5rem;
+        background-color: white;
+        color: rgb(252, 52, 52); 
+        border: 3px solid red;
+    } 
+    button:hover{
+        background-color: rgb(252, 5, 5);
+        color: rgb(255, 255, 255); 
+        border: 1px solid rgb(253, 252, 252);
+    }
+   ::placeholder{
+    color: rgb(253, 88, 88);
+    font-size: smaller;
    }
-          </script>
-      </body>
 
-</html>
+
+.fa-search{
+    display: none;
+}
+
+   
+
+
+#navbar {
+  width: 100%;
+  /* Optional */
+  position: sticky; 
+  background-color: transparent;
+  top: 0; 
+  z-index: 1;
+}
+/* Hide Hamburger */
+#navbar label, #hamburger {
+  display: none;
+}
+/* Horizontal Menu Items */
+#hamitems {
+  display: flex; 
+  justify-content: flex-end;
+}
+#hamitems a {
+  /* 100% / 5 tabs = 20% */
+  padding: 10px;
+  color: rgb(247, 246, 246);
+  text-decoration: none;
+  text-align: center;
+}
+
+
+/* Small screens */
+@media screen and (max-width: 568px) {
+.bannertext{
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 338px) {
+.bannertext{
+    font-size:x-small;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Show Hamburger Icon */
+  
+  #navbar label { 
+    display: inline-block; 
+    color: rgb(248, 245, 245);
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  #navbar{
+    background-color: #f26e7a;
+  }
+  /* Break down menu items into vertical */
+  #hamitems a{
+    box-sizing: border-box;
+    display: block;
+    width: 100%; 
+
+    
+  } 
+  .left{
+    display: none;
+  }
+  .logo{
+    display: block;
+  }
+ 
+  /* Toggle Show/Hide Menu */
+  #hamitems {
+    display: none;
+  }
+  #navbar input:checked ~ #hamitems {
+    display: block; 
+    
+  }
+      input[type=checkbox]:checked + label {
+        opacity: 0.2;
+        } 
+
+        .container{
+          background: url('wave1.svg');
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+}
+.left{
+    position: absolute;
+    left: 10px;
+    font-size: 50px;
+}
+h5{
+    margin: 0;
+    display: inline; 
+    position: absolute; 
+    left: 70px;
+    top: 10px; 
+    font-size: 1em; 
+    letter-spacing: 2px;
+}
+.logo{
+    display: none;
+    font-size: 50px;
+}
+
+ 
+
+
+
+#leaderboard {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto; 
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 10px grey;
+ 
+}
+
+#leaderboard th, #leaderboard td {
+ 
+  
+  text-align: center; 
+ 
+  
+}
+
+#leaderboard th {
+  background-color: #f75f5f;
+  font-weight: bold;
+  text-align: center;
+}
+#leaderboard tr {
+  margin: 3px;
+}
+
+#leaderboard tr:nth-child(even) {
+  background-color: #ccf31c;
+
+  transition: all 0.8s ease-in-out;
+}
+#leaderboard tr:nth-child(even):hover,#leaderboard tr:nth-child(odd):hover {  
+  transform: scale(1.1);
+}
+#leaderboard tr:nth-child(odd) {
+  background-color: #86f10b; 
+  transition: all 0.8s ease-in-out;
+}
+
+#leaderboard img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+@media (max-device-width: 768px)  {
+
+	
+
+	
+	table, thead, tbody, th, td, tr { 
+		display: block;  
+   
+    
+	}
+	
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { 
+    border: 1px solid #ccc;  
+  }
+	
+	td { 
+		
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 0%;  
+    text-align: right; 
+    width: 100%;
+    
+	}
+
+	td:before { 
+		
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width:5%; 
+		padding-right: 0px; 
+		white-space: nowrap;
+		content: attr(data-column);
+		color: #f4f0f0;
+		font-weight: bold;
+	}
+
+}  
+@media (max-device-width: 487px){
+  td:before{
+    font-size: small;
+  }
+}
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <nav id="navbar">
+            <!-- hamburguer -->
+            <input type="checkbox" id="hamburger"/>
+            <label for="hamburger">&#9776;</label>
+            <!-- menu -->
+            
+            
+            <a href="" class="left">
+                <i class="fa-sharp fa-solid fa-heart-pulse" style="color: #ff0000;" class="left">
+                </i> 
+            </a>
+            <h5>SAVE LIFE BRO</h5>
+            <div id="hamitems"> 
+              <a href="" class="logo"> <i class="fa-sharp fa-solid fa-heart-pulse" style="color: #ff0000;" class="left">
+            </i></a>
+              <a href="#">Volenteer</a>
+              <a href="#">Live Feed</a>
+              <a href="#">Blood Group</a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
+          </nav>
+        <div class="bannertext" id="btext">
+            <h1>PLEASE DONATE BLOOD</h1>
+            <h3>SEARCH FOR DONARS HERE....</h3>
+        </div> 
+        <div class="searchhere" id="isearchere">
+            <input type="search" placeholder="Blood Group..."> 
+          <button onclick="loadDoc()">
+            Search
+          </button>
+        </div> 
+        <!-- <div class="outputtable"> -->
+
+          
+      <!-- </div> -->
+    </div> 
+
+    
+      <table id="leaderboard">
+        <thead>
+          <tr>
+            <th colspan="2">Profile Pic Name</th>
+            
+            <th>Designation</th>
+            <th>Gender</th>
+            <th>Blood Group</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td ><img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Employee profile pic"></td>
+            <td data-column="Name">John Doe</td>
+            <td data-column="Designation">Manager</td>
+            <td data-column="Gender">Male</td>
+            <td data-column="Blood Group">O+</td>
+            <td data-column="Status">Active</td>
+          </tr>
+          <tr>
+            <td ><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Employee profile pic"></td>
+            <td data-column="Name">Jane Smith</td>
+            <td data-column="Designation">Developer</td>
+            <td data-column="Gender">Female</td>
+            <td data-column="Blood Group">A-</td>
+            <td data-column="Status">Inactive</td>
+          </tr>
+          <tr>
+          <td><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Employee profile pic"></td>
+          <td data-column="Name">Bob Johnson</td>
+          <td data-column="Designation">Designer</td>
+          <td data-column="Gender">Male</td>
+          <td data-column="Blood Group">B+</td>
+          <td data-column="Status">Active</td>
+        </tr>
+          <tr>
+          <td><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Employee profile pic"></td>
+          <td data-column="Name">Bob Johnson</td>
+          <td data-column="Designation">Designer</td>
+          <td data-column="Gender">Male</td>
+          <td data-column="Blood Group">B+</td>
+          <td data-column="Status">Active</td>
+        </tr>
+      </tbody> 
+    </table>
+ 
+      <script>
+        // let arr=["pic",'name','designation','gender','bgroup','status'];
+        // const table=document.getElementsByTagName('table')[0];
+        
+        // for(let i=0;i<5;i++)
+        // {
+        //   const tr=document.createElement('tr'); 
+        //   for(let j=0;j<arr.length;j++)
+        //   {
+        //     const td=document.createElement('td');
+        //     td.innerText=arr[j]; 
+        //     tr.appendChild(td);
+        //     table.append(tr);
+        //   }
+        // }   
+
+
+
+      </script>
+      
+      
+    </body>
+    </html>
