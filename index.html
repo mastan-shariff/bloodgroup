@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css"> 
+    <script src="https://kit.fontawesome.com/87d2dcb626.js" crossorigin="anonymous"></script>
+
+    <title>login</title>  
+    <style>
+      /* input[type="password"]::after {
+  content: "";
+  position: relative;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/159/159604.png");
+  background-size: contain; 
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  right: 5px;
+}
+
+input[type="password"]:hover::after {
+  background-image: url("hide-password-icon.png");
+}
+
+input[type="password"]:active::after {
+  background-image: url("hide-password-icon.png");
+} */ 
+div .group2 {
+    display: block;
+    height: 10px;
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 10px;
+    font: 22px sans-serif;
+    position: relative;
+   top: 0;
+   left: 0;
+}
+
+div .group2 > i {
+  position: absolute;
+  right: 5px;
+  bottom: 500%;
+  font-size: 15px;
+  font-weight: lighter; 
+  color: white;
+  cursor: pointer
+}
+      </style>
+    
+</head>
+
+    <body>
+        
+        <div class="content">
+            <h1><span style="color:white">humanity in it's true sense Donate</span>
+                 <span style="color:#d60034;background-color: white;"> blood&#129656</span> save life</h1>       
+        </div>
+
+        <div class="form">
+          <form class="login-form" action="homepage.html" method="">
+            <input class="user-input" type="text" name="" placeholder="Username" required id="username">
+            <!-- <input class="user-input" type="password" name="" placeholder="Password" required id="password" style="position: relative; display: block;"> --> 
+            <div class="tow">
+              <input class="active user-input" type="password" id="pass2" id="password" placeholder="Password">
+              <div class="group2">
+               <i id="icon" class="fa fa-eye-slash"></i>
+              </div> 
+            </div>
+            <div class="options-01">
+              <label class="remember-me"><input type="checkbox" name="">Remember me</label>
+              <a href="#">Forgot your password?</a>
+            </div>
+            <a href="homepage.html">
+
+              <input class="btn" type="button" name="" value="LOGIN">
+            </a>
+            <!-- <a href="homepage.html" class="btn">LOGIN</a> -->
+            <div class="options-02">
+              <p>Not Registered? <a href="registration.html">Create an Account</a></p>
+            </div>  
+          </form>
+          <script>
+            var inputPass2 = document.getElementById('pass2'),
+    icon = document.getElementById('icon');
+
+   icon.onclick = function () {
+
+    //  if(inputPass2.className == 'user-input') {
+    //     inputPass2.setAttribute('type', 'text');
+    //     icon.className = 'fa fa-eye';
+    //    inputPass2.className = '';
+
+    //  } else {
+    //     inputPass2.setAttribute('type', 'password');
+    //     icon.className = 'fa fa-eye-slash';
+    //    inputPass2.className = 'user-input'; 
+    // } 
+    if(inputPass2.getAttribute('type')==='password')
+    {
+      icon.className = 'fa fa-eye';
+      inputPass2.setAttribute('type','text');
+    } 
+    else{
+      icon.className = 'fa fa-eye-slash';
+      inputPass2.setAttribute('type','password');
+    }
+
+   }
+          </script>
+      </body>
+
+</html>
